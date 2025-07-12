@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background: #0a0a0a;
+  color: #f1f1f1;
+  font-family: "Press Start 2P", system-ui;
+  scroll-behavior: smooth;
+}
+
+/* Hero centrado */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #f2fffc;
+}
+
+/* Barra de busqueda*/
+.search-bar {
+  position: relative;
+  width: 340px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px 40px 14px 20px;
+  border-radius: 10px;
+  border: 2px solid #00ffc8;
+  background-color: #2e2e2e;
+  color: #00ffc8;
+  font-size: 16px;
+  font-family: "Press Start 2P", system-ui;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #00ffff;
+  background-color: #1e1e1e;
+  color: #00ffff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00ffc8;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Cards en grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 40px 60px;
+}
+
+.card {
+  background: #181818;
+  border: 2px solid #00ffcc;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #00ffcc;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.card a {
+  display: block;
+  margin: 10px 0;
+  color: #00bfff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.card a:hover {
+  color: #b1f7f7;
+}
+

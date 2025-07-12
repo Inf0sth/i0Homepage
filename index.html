@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hellooooo</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="I0G64px.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <div class="hero">
+    <h1 id="title">Welcome <span id="dynamic-word">Back</span>!!</h1>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search ">
+      <span class="search-icon">\*o*/</span>
+    </div>
+  </div>
+
+  <div class="grid-container" id="card-grid">
+    <div class="card">
+      <h3>Labs</h3>
+      <a href="https://www.hacksplaining.com/lessons" target="_blank">Hacksplaining</a>
+      <a href="https://dockerlabs.es/#/" target="_blank">Dockerlabs</a>
+      <a href="https://hackmyvm.eu/" target="_blank">Hackmyvm</a>
+      <a href="https://www.vulnhub.com/" target="_blank">Vulnhub</a>
+      <a href="https://google-gruyere.appspot.com/" target="_blank">Google Gruyere</a>
+      <a href="https://pentesterlab.com/" target="_blank">Pentesterlab</a>
+      <a href="https://www.hackthebox.com/" target="_blank">Hackthebox</a>
+      <a href="https://tryhackme.com/" target="_blank">Tryhackme</a>
+      <a href="https://www.hackthissite.org/" target="_blank">Hackthissite</a>
+    </div>
+    <div class="card">
+      <h3>Practice</h3>
+      <a href="https://www.codedex.io/" target="_blank">Codedex</a>
+      <a href="https://overthewire.org/wargames/" target="_blank">Over the wire</a>
+      <a href="https://retosdeprogramacion.com/" target="_blank">Retos de programación</a>
+      <a href="https://platzi.com/comunidad/retos-de-programacion-para-cualquier-lenguaje-segundo-nivel-condicionales/" target="_blank">Retos Platzi</a>
+      <a href="https://exercism.org/" target="_blank">Exercism</a>
+      <a href="https://www.codewars.com/" target="_blank">Codewars</a>
+      <a href="https://www.hackerearth.com/practice/" target="_blank">Hackerearth</a>
+      <a href="https://rustlings.rust-lang.org/" target="_blank">Rustlings</a>
+    </div>
+    <div class="card">
+      <h3>Blogs</h3>
+      <a href="https://www.geeksforgeeks.org/" target="_blank">Geeksforgeeks</a>
+      <a href="https://www.redeszone.net/" target="_blank">Redeszone</a>
+      <a href="https://blog.desdelinux.net/" target="_blank">Desdelinux</a>
+      <a href="https://www.elladodelmal.com/" target="_blank">Elladodelmal</a>
+      <a href="https://itsfoss.com/" target="_blank">Itsfoss</a>
+      <a href="https://www.darknet.org.uk/" target="_blank">Darknet</a>
+      <a href="https://deephacking.tech/" target="_blank">Deephacking</a>
+      <a href="https://hackaday.com/" target="_blank">Hackaday</a>
+    </div>
+    <div class="card">
+      <h3>Internet community</h3>
+      <a href="https://archive.org/" target="_blank">Internet Archive</a>
+      <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+      <a href="https://es.quora.com/" target="_blank">Quora</a>
+      <a href="https://www.tumblr.com/" target="_blank">Tumblr</a>
+      <a href="http://saidit.net/" target="_blank">Saidit</a>
+      <a href="https://discord.com/" target="_blank">Discord</a>
+      <a href="https://matrix.org/" target="_blank">Matrix</a>
+    </div>
+    <div class="card">
+      <h3>Threat Maps</h3>
+      <a href="https://fortiguard.fortinet.com/threat-map" target="_blank">Fortinet threat-map</a>
+      <a href="https://cybermap.kaspersky.com/" target="_blank">Kaspersky threat-map</a>
+      <a href="https://talosintelligence.com/ebc_spam" target="_blank">Talos threat-map</a>
+      <a href="https://livethreatmap.radware.com/" target="_blank">Live threat-map</a>
+      <a href="https://threatmap.checkpoint.com/" target="_blank">Checkpoint</a>
+      <a href="https://www.digitalattackmap.com/#anim=1&color=0&country=ALL&list=0&time=18763&view=map" target="_blank">Digital Attackmap</a>
+      <a href="https://threatmap.bitdefender.com/" target="_blank">Bitdefender threat-map</a>
+      <a href="" target="_blank"></a>
+    </div>
+    <div class="card">
+      <h3>Cyber Community</h3>
+      <a href="https://stackoverflow.com/questions" target="_blank">Stackoverflow</a>
+      <a href="https://dev.to/" target="_blank">DEV</a>
+      <a href="https://superuser.com/" target="_blank">Superuser</a>
+      <a href="https://bbs.archlinux.org/" target="_blank">Arch forums</a>
+      <a href="https://thehackernews.com/" target="_blank">Thehackernews</a>
+      <a href="https://news.ycombinator.com/" target="_blank">Hackernews</a>
+      <a href="https://serverfault.com/" target="_blank">Serverfault</a>
+    </div>
+    <div class="card">
+      <h3>Distros</h3>
+      <a href="https://www.kali.org/" target="_blank">Kali Linux</a>
+      <a href="https://parrotsec.org/" target="_blank">Parrot OS</a>
+      <a href="https://exodia-os.github.io/" target="_blank">Exodia-OS</a>
+      <a href="https://fedoraproject.org/es/labs/security" target="_blank">Fedora security Lab</a>
+      <a href="https://blackarch.org/" target="_blank">Black Arch</a>
+      <a href="https://archiveos.org/" target="_blank">ArchiveOS</a>
+      <a href="https://tails.net/" target="_blank">Tails</a>
+      <a href="https://www.whonix.org/" target="_blank">Whonix</a>
+      <a href="https://www.qubes-os.org/" target="_blank">Qubes-OS</a>
+    </div>
+    <div class="card">
+      <h3>Linux resources</h3>
+      <a href="https://pkgs.org/" target="_blank">Packages for Linux</a>
+      <a href="https://flatpak.org/" target="_blank">Flatpak</a>
+      <a href="https://snapcraft.io/" target="_blank">Snap</a>
+      <a href="https://appimage.org/" target="_blank">Appimage</a>
+      <a href="https://flathub.org/es" target="_blank">Flathub</a>
+    </div>
+    <div class="card">
+      <h3>Buy</h3>
+      <a href="https://frame.work/" target="_blank">Framework</a>
+      <a href="https://www.raspberrypi.com/" target="_blank">Raspberrypi</a>
+      <a href="https://pine64.com/" target="_blank">Pine64</a>
+      <a href="https://electroniccats.com/" target="_blank">Electroniccats</a>
+      <a href="https://tiendaespia.com.mx/" target="_blank">Tienda espia</a>
+      <a href="https://shop.hak5.org/" target="_blank">Hack5</a>
+    </div>
+    <div class="card">
+      <h3>Learn</h3>
+      <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+      <a href="https://www.hacker101.com/" target="_blank">Hacker101</a>
+      <a href="https://opensecuritytraining.info/" target="_blank">Open Security Training</a>
+      <a href="https://mimo.org/" target="_blank">Mimo</a>
+      <a href="https://www.netacad.com/" target="_blank">Cisco Skills</a>
+      <a href="https://learn.eccouncil.org/go?logged=false" target="_blank">Codered</a>
+      <a href="https://learn.microsoft.com/es-es/training/" target="_blank">Microsoft</a>
+      <a href="https://www.cloudskillsboost.google/" target="_blank">Google Skillboost</a>
+      <a href="https://aprende.org/" target="_blank">Aprende.org</a>
+      <a href="https://www.coursera.org" target="_blank">Coursera</a>
+    </div>
+    <div class="card">
+      <h3>Forensics Tools</h3>
+      <a href="https://github.com/mesquidar/ForensicsTools" target="_blank">Forensics repo</a>
+      <a href="https://ericzimmerman.github.io/#!index.md" target="_blank">Ericzimmerman</a>
+      <a href="https://en.fawproject.com/" target="_blank">Fawproject</a>
+      <a href="https://www.xplico.org/" target="_blank">Xplico</a>
+      <a href="https://www.autopsy.com/" target="_blank">Autopsy</a>
+      <a href="https://www.cgsecurity.org/wiki/PhotoRec" target="_blank">TestDisk</a>
+    </div>
+    <div class="card">
+      <h3>Dev Helps</h3>
+      <a href="https://zealdocs.org/" target="_blank">Zeal</a>
+      <a href="https://devdocs.io/" target="_blank">Devdocs</a>
+      <a href="https://pseint.sourceforge.net/" target="_blank">Pseint</a>
+      <a href="https://htmlcolorcodes.com/es/" target="_blank">Color codes</a>
+      <a href="https://simpleicons.org/" target="_blank">Simple Icons</a>
+      <a href="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/" target="_blank">Simple Icons CDN</a>
+      <a href="https://melpa.org/#/" target="_blank">Melpa</a>
+      <a href="https://www.drawio.com/" target="_blank">Drawio</a>
+      <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+    </div>
+    <div class="card">
+      <h3>Dev Tools</h3>
+      <a href="https://github.com/" target="_blank">Github</a>
+      <a href="https://about.gitlab.com/" target="_blank">Gitlab</a>
+      <a href="https://bitbucket.org/product/" target="_blank">Bitbucket</a>
+      <a href="https://www.docker.com/" target="_blank">Docker</a>
+      <a href="https://hub.docker.com/" target="_blank">Docker hub</a>
+      <a href="https://firebase.google.com/" target="_blank">Firebase</a>
+      <a href="https://supabase.com/" target="_blank">Supabase</a>
+      <a href="https://www.gitkraken.com/" target="_blank">GitKraken</a>
+      <a href="" target="_blank"></a>
+      <a href="" target="_blank"></a>
+      <a href="" target="_blank"></a>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
